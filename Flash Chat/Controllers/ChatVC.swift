@@ -1,6 +1,6 @@
 import UIKit
 
-class ChatViewController: UIViewController {
+class ChatVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextfield: UITextField!

@@ -1,11 +1,12 @@
 import UIKit
 
-class RegisterViewController: UIViewController {
+class LoginVC: UIViewController {
 
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     
-    @IBAction func registerPressed(_ sender: UIButton) {
+
+    @IBAction func loginPressed(_ sender: UIButton) {
     }
     
 }

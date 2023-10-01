@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Welcome View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="gOV-Nw-jnq">
             <objects>
-                <viewController id="Tim-3B-f4n" customClass="WelcomeViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Tim-3B-f4n" customClass="WelcomeVC" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H86-OM-sMN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="-86" y="135"/>
         </scene>
-        <!--Register View Controller-->
+        <!--RegisterVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RegisterViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RegisterVC" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h2S-Ae-zdW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,10 +167,10 @@
             </objects>
             <point key="canvasLocation" x="948" y="-295"/>
         </scene>
-        <!--Login View Controller-->
+        <!--LoginVC-->
         <scene sceneID="Hzg-jR-yiY">
             <objects>
-                <viewController id="5v2-hE-4Ub" customClass="LoginViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5v2-hE-4Ub" customClass="LoginVC" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NR3-PA-yDz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -260,10 +260,10 @@
             </objects>
             <point key="canvasLocation" x="948" y="644"/>
         </scene>
-        <!--Chat View Controller-->
+        <!--ChatVC-->
         <scene sceneID="yeH-Ia-3JZ">
             <objects>
-                <viewController id="lwd-AH-u8E" customClass="ChatViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lwd-AH-u8E" customClass="ChatVC" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CEy-W8-acN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
