@@ -11,7 +11,7 @@ class ChatVC: UIViewController {
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
+        
     }
     
-
 }
