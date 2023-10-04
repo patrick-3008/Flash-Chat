@@ -11,7 +11,11 @@ class RegisterVC: UIViewController {
         if let email = emailTextfield.text, let password = passwordTextfield.text {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 if let e = error {
-                    print(e.localizedDescription)
+                    // Show alert dialog with the error
+                    let alert = UIAlertController.init(title: "Registration Error", message: e.localizedDescription, preferredStyle: .alert)
+                    let okAction = UIAlertAction.init(title: "Ok", style: .default)
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true, completion: nil)
                 } else {
                     // Navigate to ChatVC
                     self.performSegue(withIdentifier: "RegisterToChat", sender: self)
