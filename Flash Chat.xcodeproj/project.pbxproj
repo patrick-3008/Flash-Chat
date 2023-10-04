@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		0B62818D235DF00B00E35CAF /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B62818C235DF00B00E35CAF /* RegisterVC.swift */; };
 		0B62818F235DF01000E35CAF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B62818E235DF01000E35CAF /* LoginVC.swift */; };
 		0B628191235DF01B00E35CAF /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B628190235DF01B00E35CAF /* ChatVC.swift */; };
+		88A71FDA2ACDE9A0003BE9BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88A71FD92ACDE9A0003BE9BC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0B62818E235DF01000E35CAF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		0B628190235DF01B00E35CAF /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		340A4998EEF536687EEB6969 /* Pods-Flash Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat.debug.xcconfig"; path = "Target Support Files/Pods-Flash Chat/Pods-Flash Chat.debug.xcconfig"; sourceTree = "<group>"; };
+		88A71FD92ACDE9A0003BE9BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9F34749238E02508E16C9BBB /* Pods-Flash Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat.release.xcconfig"; path = "Target Support Files/Pods-Flash Chat/Pods-Flash Chat.release.xcconfig"; sourceTree = "<group>"; };
 		ACD33BE2FAB76BC091AF88D2 /* Pods_Flash_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flash_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +79,7 @@
 				0B62817F235DEE8400E35CAF /* Assets.xcassets */,
 				0B628181235DEE8400E35CAF /* LaunchScreen.storyboard */,
 				0B628184235DEE8400E35CAF /* Info.plist */,
+				88A71FD92ACDE9A0003BE9BC /* GoogleService-Info.plist */,
 			);
 			path = "Flash Chat";
 			sourceTree = "<group>";
@@ -106,7 +109,6 @@
 				340A4998EEF536687EEB6969 /* Pods-Flash Chat.debug.xcconfig */,
 				9F34749238E02508E16C9BBB /* Pods-Flash Chat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -136,7 +138,7 @@
 				0B62816F235DEE8100E35CAF /* Sources */,
 				0B628170235DEE8100E35CAF /* Frameworks */,
 				0B628171235DEE8100E35CAF /* Resources */,
-				82831E9426DC0213FE5129C9 /* [CP] Embed Pods Frameworks */,
+				BC8A47C8AE8C5B53E76F867D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,8 +155,9 @@
 		0B62816B235DEE8100E35CAF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1110;
-				LastUpgradeCheck = 1110;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "Angela Yu";
 				TargetAttributes = {
 					0B628172235DEE8100E35CAF = {
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B628183235DEE8400E35CAF /* LaunchScreen.storyboard in Resources */,
+				88A71FDA2ACDE9A0003BE9BC /* GoogleService-Info.plist in Resources */,
 				0B628180235DEE8400E35CAF /* Assets.xcassets in Resources */,
 				0B62817E235DEE8100E35CAF /* Main.storyboard in Resources */,
 			);
@@ -216,7 +220,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		82831E9426DC0213FE5129C9 /* [CP] Embed Pods Frameworks */ = {
+		BC8A47C8AE8C5B53E76F867D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -297,6 +301,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -357,6 +362,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -391,13 +397,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ECFYJZ64T;
+				DEVELOPMENT_TEAM = 2T4Q64JUFN;
 				INFOPLIST_FILE = "Flash Chat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Flash-Chat";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chatting.Flash-Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -410,13 +416,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ECFYJZ64T;
+				DEVELOPMENT_TEAM = 2T4Q64JUFN;
 				INFOPLIST_FILE = "Flash Chat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Flash-Chat";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chatting.Flash-Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

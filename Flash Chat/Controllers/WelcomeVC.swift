@@ -7,6 +7,10 @@ class WelcomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // animation of titleLabel using CLTypingLabel pod
+//        titleLabel.text = "⚡️FlashChat"
+        
+        // manual way of label animation
         titleLabel.text = ""
         var charIndex = 0.0
         let titleText = "⚡️FlashChat"
