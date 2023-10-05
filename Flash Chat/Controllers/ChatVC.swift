@@ -8,17 +8,18 @@ class ChatVC: UIViewController {
     
     var messages: [Message] = [
         Message(sender: "1@2.com", body: "hi"),
-        Message(sender: "1@2.com", body: "hey"),
-        Message(sender: "a@b.com", body: "hello")
+        Message(sender: "a@b.com", body: "hello"),
+        Message(sender: "a@b.com", body: "test, test, test, test, test, test, test, test")
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.dataSource = self
-//        tableView.delegate = self
         title = K.appName
         navigationItem.hidesBackButton = true
+        
+        tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
@@ -44,17 +45,10 @@ extension ChatVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
-        cell.textLabel?.text = messages[indexPath.row].body
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
+        cell.label.text = messages[indexPath.row].body
         
         return cell
     }
         
 }
-
-// to select each row
-//extension ChatVC: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print(indexPath.row)
-//    }
-//}
