@@ -21,7 +21,7 @@ class ChatVC: UIViewController {
         
         loadMessages()
     }
-    
+        
     func loadMessages() {
         
         db.collection(K.FStore.collectionName)
