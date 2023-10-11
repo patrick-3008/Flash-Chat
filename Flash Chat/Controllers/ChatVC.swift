@@ -9,12 +9,11 @@ class ChatVC: UIViewController {
     let db = Firestore.firestore()
     
     var messages: [Message] = []
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.dataSource = self
-        title = K.appName
         navigationItem.hidesBackButton = true
         
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
@@ -41,6 +40,8 @@ class ChatVC: UIViewController {
                             
                             DispatchQueue.main.async {
                                 self.tableView.reloadData()
+                                let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
+                                self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
                             }
                         }
                     }
@@ -61,6 +62,9 @@ class ChatVC: UIViewController {
                     print("There was an error in saving data to firebase, \(e)")
                 } else {
                     print("Successfully saved data.")
+                    DispatchQueue.main.async {
+                        self.messageTextfield.text = ""
+                    }
                 }
             }
         }
