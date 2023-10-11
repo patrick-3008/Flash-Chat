@@ -50,6 +50,7 @@ FlashChat is designed with clean code and separation of concerns in mind. It's s
 # License
 
 FlashChat is licensed under the MIT License. Feel free to use, modify, and distribute it as needed. However, keep in mind that Firebase has its own terms and conditions for usage.
+
 email: patricknaashat@yahoo.com
 
 Enjoy using FlashChat, and happy chatting! 😄📱🗨️
